@@ -9,9 +9,6 @@ def MaxGain(coins, gain_so_far=0):
 
     if len(coins)==0:
         return gain_so_far
-
-    if len(coins)==1:
-        result += coins[0]
     else:
         choice_1 = coins[0]
         game_state_1 = gamestate_after_opponents_move(coins[1:])
